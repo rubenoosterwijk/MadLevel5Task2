@@ -3,21 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/notePadFragment">
+    app:startDestination="@id/GameBacklogFragment">
 
     <fragment
-        android:id="@+id/notePadFragment"
-        android:name="com.example.madlevel5task2.ui.NotepadFragment"
-        android:label="fragment_notepad"
-        tools:layout="@layout/fragment_notepad">
+        android:id="@+id/GameBacklogFragment"
+        android:name="com.example.madlevel5task2.ui.GameBacklogFragment"
+        tools:layout="@layout/fragment_game_backlog">
+
         <action
-            android:id="@+id/action_notepadFragment_to_addNoteFragment"
-            app:destination="@id/addNoteFragment" />
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/AddGameFragment" />
     </fragment>
     <fragment
-        android:id="@+id/addNoteFragment"
-        android:name="com.example.madlevel5task2.ui.AddNoteFragment"
-        android:label="fragment_add_note"
-        tools:layout="@layout/fragment_add_note" />
+        android:id="@+id/AddGameFragment"
+        android:name="com.example.madlevel5task2.ui.AddGameFragment"
+        tools:layout="@layout/fragment_add_game">
 
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/GameBacklogFragment" />
+    </fragment>
 </navigation>
