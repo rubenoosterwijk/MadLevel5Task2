@@ -7,9 +7,18 @@ import java.util.*
 
 @Entity(tableName = "GameBacklogTable")
 class Game (
-    @ColumnInfo(name = "title") var title: String,
-    @ColumnInfo(name = "platform") var platform: String,
-    @ColumnInfo(name = "releaseDate") var releaseDate: Date,
+
+    @ColumnInfo(name = "title")
+    var title: String,
+
+    @ColumnInfo(name = "platform")
+    var platform: String,
+
+    @ColumnInfo(name = "releaseDate")
+    var releaseDate: Date,
+
     @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "id") var id: Long? = null
+
+    @ColumnInfo(name = "id")
+    var id: Long? = null
 )
