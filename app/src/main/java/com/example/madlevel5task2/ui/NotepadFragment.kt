@@ -1,4 +1,4 @@
-package com.example.madlevel5task1.ui
+package com.example.madlevel5task2.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,9 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import com.example.madlevel5task1.R
-import com.example.madlevel5task1.databinding.FragmentNotepadBinding
-import com.example.madlevel5task1.viewmodel.NoteViewModel
+import com.example.madlevel5task2.R
+import com.example.madlevel5task2.databinding.FragmentNotepadBinding
+import com.example.madlevel5task2.viewmodel.NoteViewModel
 
 
 /**

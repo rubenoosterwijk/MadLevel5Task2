@@ -1,12 +1,10 @@
-package com.example.madlevel5task1.repository
+package com.example.madlevel5task2.repository
 
 import android.content.Context
-import android.os.Parcel
-import android.os.Parcelable
 import androidx.lifecycle.LiveData
-import com.example.madlevel5task1.dao.NoteDao
-import com.example.madlevel5task1.database.NotepadRoomDatabase
-import com.example.madlevel5task1.model.Note
+import com.example.madlevel5task2.dao.NoteDao
+import com.example.madlevel5task2.database.NotepadRoomDatabase
+import com.example.madlevel5task2.model.Note
 
 class NoteRepository(context: Context)  {
 

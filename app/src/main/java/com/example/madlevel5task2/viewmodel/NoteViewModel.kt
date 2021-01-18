@@ -1,10 +1,10 @@
-package com.example.madlevel5task1.viewmodel
+package com.example.madlevel5task2.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
-import com.example.madlevel5task1.model.Note
-import com.example.madlevel5task1.repository.NoteRepository
+import com.example.madlevel5task2.model.Note
+import com.example.madlevel5task2.repository.NoteRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

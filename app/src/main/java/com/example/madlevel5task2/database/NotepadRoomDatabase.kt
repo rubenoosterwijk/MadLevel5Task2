@@ -1,4 +1,4 @@
-package com.example.madlevel5task1.database
+package com.example.madlevel5task2.database
 
 import android.content.Context
 import androidx.room.Database
@@ -6,9 +6,9 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import androidx.sqlite.db.SupportSQLiteDatabase
-import com.example.madlevel5task1.converter.Converters
-import com.example.madlevel5task1.dao.NoteDao
-import com.example.madlevel5task1.model.Note
+import com.example.madlevel5task2.converter.Converters
+import com.example.madlevel5task2.dao.NoteDao
+import com.example.madlevel5task2.model.Note
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

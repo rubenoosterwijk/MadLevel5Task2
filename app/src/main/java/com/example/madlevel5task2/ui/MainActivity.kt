@@ -1,4 +1,4 @@
-package com.example.madlevel5task1.ui
+package com.example.madlevel5task2.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,8 +6,8 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import com.example.madlevel5task1.R
-import com.example.madlevel5task1.databinding.ActivityMainBinding
+import com.example.madlevel5task2.R
+import com.example.madlevel5task2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

@@ -1,4 +1,4 @@
-package com.example.madlevel5task1.ui
+package com.example.madlevel5task2.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,10 +8,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import com.example.madlevel5task1.R
-import com.example.madlevel5task1.databinding.FragmentAddNoteBinding
-import com.example.madlevel5task1.databinding.FragmentNotepadBinding
-import com.example.madlevel5task1.viewmodel.NoteViewModel
+import com.example.madlevel5task2.databinding.FragmentAddNoteBinding
+import com.example.madlevel5task2.viewmodel.NoteViewModel
 
 class AddNoteFragment : Fragment() {
 
