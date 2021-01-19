@@ -2,31 +2,39 @@ package com.example.madlevel5task2.repository
 
 import android.content.Context
 import androidx.lifecycle.LiveData
-import com.example.madlevel5task2.dao.GameBacklogDao
-import com.example.madlevel5task2.database.GameBacklogRoomDatabase
+import androidx.lifecycle.MutableLiveData
+import com.example.madlevel5task2.database.GameBacklogDatabase
+import com.example.madlevel5task2.dao.GameDao
 import com.example.madlevel5task2.model.Game
-class GameRepository(context: Context) {
 
-    private val gameDao: GameBacklogDao
+
+class GameRepository(context: Context) {
+    private val gameDao: GameDao
+
 
     init {
-        val database = GameBacklogRoomDatabase.getDatabase(context)
-        gameDao = database!!.gameDao()
+        val database = GameBacklogDatabase.getDatabase(context)
+        gameDao =  database!!.gameDao()
     }
 
-    fun getAllGames(): LiveData<List<Game?>> {
+    fun getGameBacklog(): LiveData<List<Game>> {
         return gameDao.getAllGames()
     }
 
-    suspend fun insertGame(game: Game) {
-        gameDao.insertGame(game)
+    fun getAllGames(): LiveData<List<Game>> {
+        return gameDao.getAllGames() ?: MutableLiveData(emptyList())
     }
 
-    suspend fun deleteGame(game: Game) {
-        gameDao.deleteGame(game)
+
+    suspend fun updateBacklog(game: Game) {
+        gameDao.updateGame(game)
     }
 
-    suspend fun deleteGames() {
-        gameDao.deleteGames()
+    suspend fun insertGame(game: Game ) {
+        gameDao?.insertGame(game);
+    }
+
+    suspend fun deleteAll(){
+        gameDao?.deleteAll()
     }
 }
